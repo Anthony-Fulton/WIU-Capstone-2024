@@ -1,0 +1,27 @@
+[0.007s] Invoking command in '/root/seniordesign_ws/src/snow_white_description/build/snow_white_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/seniordesign_ws/src/snow_white_description/build/snow_white_description -- -j20 -l20
+[0.024s] Invoked command in '/root/seniordesign_ws/src/snow_white_description/build/snow_white_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/seniordesign_ws/src/snow_white_description/build/snow_white_description -- -j20 -l20
+[0.039s] Invoking command in '/root/seniordesign_ws/src/snow_white_description/build/snow_white_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/seniordesign_ws/src/snow_white_description/build/snow_white_description
+[0.042s] -- Install configuration: ""
+[0.042s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/src
+[0.042s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/src/description
+[0.043s] -- Installing: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/src/description/snow_white_description.urdf
+[0.043s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/launch
+[0.043s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/launch/display.launch.py
+[0.043s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/rviz
+[0.043s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/rviz/urdf_config.rviz
+[0.043s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/ament_index/resource_index/package_run_dependencies/snow_white_description
+[0.043s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/ament_index/resource_index/parent_prefix_path/snow_white_description
+[0.043s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/environment/ament_prefix_path.sh
+[0.043s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/environment/ament_prefix_path.dsv
+[0.044s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/environment/path.sh
+[0.044s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/environment/path.dsv
+[0.044s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/local_setup.bash
+[0.044s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/local_setup.sh
+[0.044s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/local_setup.zsh
+[0.044s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/local_setup.dsv
+[0.044s] -- Installing: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/package.dsv
+[0.045s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/ament_index/resource_index/packages/snow_white_description
+[0.045s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/cmake/snow_white_descriptionConfig.cmake
+[0.045s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/cmake/snow_white_descriptionConfig-version.cmake
+[0.045s] -- Up-to-date: /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/package.xml
+[0.046s] Invoked command in '/root/seniordesign_ws/src/snow_white_description/build/snow_white_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/seniordesign_ws/src/snow_white_description/build/snow_white_description
