@@ -60,6 +60,7 @@
 /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/src/description/positive_y_ultrasonic.stl
 /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/src/description/camera.stl
 /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/launch/master2.launch.py
+/root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/launch/master2_v2.launch.py
 /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/launch/master.launch.py
 /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/launch/display.launch.py
 /root/seniordesign_ws/src/snow_white_description/install/snow_white_description/share/snow_white_description/launch/display2.launch.py

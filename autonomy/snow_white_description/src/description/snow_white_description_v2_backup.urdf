@@ -12,6 +12,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/Chassis.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Cyan">
+            <color rgba="0 1.0 1.0 1.0"/>
+        </material>
     </visual>
     <collision name="Chassis_collision">
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
@@ -48,6 +51,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/rear_left_wheel.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Wheel">
+            <color rgba="0.5 0.5 0.5 1.0"/>
+        </material>
     </visual>
     <collision name="rear_left_wheel_collision">
         <origin xyz="1.1655260760350041 -0.27536793106901175 -0.14474750000000006" rpy="0.0 0.0 0.0" />
@@ -64,13 +70,6 @@
     <axis xyz="0 1 0"/>
 </joint>
 
-<gazebo reference="rear_left_wheel_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="rear_right_wheel_link">
     <inertial>
         <origin xyz="-1.1655260760350006 -0.27536793106455426 0.14474750000000006" rpy="0.0 0.0 0.0" />
@@ -82,6 +81,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/rear_right_wheel.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Wheel">
+            <color rgba="0.5 0.5 0.5 1.0"/>
+        </material>
     </visual>
     <collision name="rear_right_wheel_collision">
         <origin xyz="1.1655260760350006 0.27536793106455426 -0.14474750000000006" rpy="0.0 0.0 0.0" />
@@ -98,13 +100,6 @@
     <axis xyz="0 1 0"/>
 </joint>
 
-<gazebo reference="rear_right_wheel_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="front_left_wheel_link">
     <inertial>
         <origin xyz="-0.47912597751770164 0.27536793106894875 0.1447475000000005" rpy="0.0 0.0 0.0" />
@@ -116,6 +111,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/front_left_wheel.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Wheel">
+            <color rgba="0.5 0.5 0.5 1.0"/>
+        </material>
     </visual>
     <collision name="front_left_wheel_collision">
         <origin xyz="0.47912597751770164 -0.27536793106894875 -0.1447475000000005" rpy="0.0 0.0 0.0" />
@@ -132,13 +130,6 @@
     <axis xyz="0 1 0"/>
 </joint>
 
-<gazebo reference="front_left_wheel_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="front_right_wheel_link">
     <inertial>
         <origin xyz="-0.47912597751770025 -0.2753679310644906 0.14474749999999975" rpy="0.0 0.0 0.0" />
@@ -150,6 +141,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/front_right_wheel.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Wheel">
+            <color rgba="0.5 0.5 0.5 1.0"/>
+        </material>
     </visual>
     <collision name="front_right_wheel_collision">
         <origin xyz="0.47912597751770025 0.2753679310644906 -0.14474749999999975" rpy="0.0 0.0 0.0" />
@@ -166,13 +160,6 @@
     <axis xyz="0 1 0"/>
 </joint>
 
-<gazebo reference="front_right_wheel_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="rear_left_wheel_shaft_link">
     <inertial>
         <origin xyz="-1.1655106658181305 0.16733194473862242 0.14477951854361112" rpy="0.0 0.0 0.0" />
@@ -184,6 +171,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/rear_left_wheel_shaft.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Shaft">
+            <color rgba="0.5 1.0 0.5 1.0"/>
+        </material>        
     </visual>
     <collision name="rear_left_wheel_shaft_collision">
         <origin xyz="1.1655106658181305 -0.16733194473862242 -0.14477951854361112" rpy="0.0 0.0 0.0" />
@@ -200,13 +190,6 @@
     <axis xyz="0 1 0"/>
 </joint>
 
-<gazebo reference="rear_left_wheel_shaft_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="front_left_wheel_shaft_link">
     <inertial>
         <origin xyz="-0.47912081895680636 0.1673319447386228 0.14471234211626394" rpy="0.0 0.0 0.0" />
@@ -218,6 +201,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/front_left_wheel_shaft.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Shaft">
+            <color rgba="0.5 1.0 0.5 1.0"/>
+        </material>     
     </visual>
     <collision name="front_left_wheel_shaft_collision">
         <origin xyz="0.47912081895680636 -0.1673319447386228 -0.14471234211626394" rpy="0.0 0.0 0.0" />
@@ -234,13 +220,6 @@
     <axis xyz="0 1 0"/>
 </joint>
 
-<gazebo reference="front_left_wheel_shaft_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="rear_right_wheel_shaft_link">
     <inertial>
         <origin xyz="-1.1655312345958795 -0.167331944738623 0.14471234211626424" rpy="0.0 0.0 0.0" />
@@ -252,6 +231,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/rear_right_wheel_shaft.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Shaft">
+            <color rgba="0.5 1.0 0.5 1.0"/>
+        </material>     
     </visual>
     <collision name="rear_right_wheel_shaft_collision">
         <origin xyz="1.1655312345958795 0.167331944738623 -0.14471234211626424" rpy="0.0 0.0 0.0" />
@@ -268,13 +250,6 @@
     <axis xyz="0 1 0"/>
 </joint>
 
-<gazebo reference="rear_right_wheel_shaft_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="front_right_wheel_shaft_link">
     <inertial>
         <origin xyz="-0.47914138781272436 -0.1673319447386227 0.14477951870603134" rpy="0.0 0.0 0.0" />
@@ -286,6 +261,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/front_right_wheel_shaft.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Shaft">
+            <color rgba="0.5 1.0 0.5 1.0"/>
+        </material>     
     </visual>
     <collision name="front_right_wheel_shaft_collision">
         <origin xyz="0.47914138781272436 0.1673319447386227 -0.14477951870603134" rpy="0.0 0.0 0.0" />
@@ -302,14 +280,6 @@
     <axis xyz="0 1 0"/>
 </joint>
 
-
-<gazebo reference="front_right_wheel_shaft_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="augur_link">
     <inertial>
         <origin xyz="-0.11029548966368172 0.02590048066008034 0.25432357867980443" rpy="0.0 0.0 0.0" />
@@ -321,6 +291,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/augur.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Augur">
+            <color rgba="1.0 0 0 1.0"/>
+        </material>     
     </visual>
     <collision name="augur_collision">
         <origin xyz="0.11029548966368172 -0.02590048066008034 -0.25432357867980443" rpy="0.0 0.0 0.0" />
@@ -337,13 +310,6 @@
     <axis xyz="0 1 0"/>
 </joint>
 
-<gazebo reference="augur_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="left_augur_wheel_link">
     <inertial>
         <origin xyz="-0.20802669205743962 0.20850000000000002 0.036129408344915244" rpy="0.0 0.0 0.0" />
@@ -355,6 +321,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/left_augur_wheel.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Wheel">
+            <color rgba="0.5 0.5 0.5 1.0"/>
+        </material>
     </visual>
     <collision name="left_augur_wheel_collision">
         <origin xyz="0.20802669205743962 -0.20850000000000002 -0.036129408344915244" rpy="0.0 0.0 0.0" />
@@ -364,19 +333,12 @@
     </collision>
 </link>
 
-<joint name="left_augur_wheel_joint" type="continuous">
+<joint name="left_augur_wheel_joint" type="fixed">
     <parent link="base_link"/>
     <child link="left_augur_wheel_link"/>
     <origin xyz="-0.20802669205743962 0.20850000000000002 0.036129408344915244"/>
     <axis xyz="0 1 0"/>
 </joint>    
-
-<gazebo reference="left_augur_wheel_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
 
 <link name="right_augur_wheel_link">
     <inertial>
@@ -389,6 +351,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/right_augur_wheel.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Wheel">
+            <color rgba="0.5 0.5 0.5 1.0"/>
+        </material>
     </visual>
     <collision name="right_augur_wheel_collision">
         <origin xyz="0.20802669205743954 0.23349999999999987 -0.03612940834491524" rpy="0.0 0.0 0.0" />
@@ -398,19 +363,12 @@
     </collision>
 </link>
 
-<joint name="right_augur_wheel_joint" type="continuous">
+<joint name="right_augur_wheel_joint" type="fixed">
     <parent link="base_link"/>
     <child link="right_augur_wheel_link"/>
     <origin xyz="-0.20802669205743954 -0.23349999999999987 0.03612940834491524"/>
     <axis xyz="0 1 0"/>
 </joint>      
-
-<gazebo reference="right_augur_wheel_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo> 
 
 <link name="negative_x_ultrasonic_link">
     <inertial>
@@ -423,6 +381,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/negative_x_ultrasonic.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Sensor">
+            <color rgba="0.5 0.5 1.0 1.0"/>
+        </material>
     </visual>
     <collision name="negative_x_ultrasonic_collision">
         <origin xyz="1.2998767885185385 -7.604018495665824e-13 -0.33687612254746385" rpy="0.0 0.0 0.0" />
@@ -439,14 +400,6 @@
     <axis xyz="0 1 0"/>
 </joint>
 
-
-<gazebo reference="negative_x_ultrasonic_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="positive_y_ultrasonic_link">
     <inertial>
         <origin xyz="-0.8223259775185296 -0.20085081100080643 0.336876122547469" rpy="0.0 0.0 0.0" />
@@ -458,6 +411,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/positive_y_ultrasonic.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Sensor">
+            <color rgba="0.5 0.5 1.0 1.0"/>
+        </material>
     </visual>
     <collision name="positive_y_ultrasonic_collision">
         <origin xyz="0.8223259775185296 0.20085081100080643 -0.336876122547469" rpy="0.0 0.0 0.0" />
@@ -474,13 +430,6 @@
     <axis xyz="0 1 0"/>
 </joint> 
 
-<gazebo reference="positive_y_ultrasonic_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="negative_y_ultrasonic_link">
     <inertial>
         <origin xyz="-0.8223259775169315 0.20085081100077495 0.336876122547469" rpy="0.0 0.0 0.0" />
@@ -492,6 +441,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/negative_y_ultrasonic.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Sensor">
+            <color rgba="0.5 0.5 1.0 1.0"/>
+        </material>
     </visual>
     <collision name="negative_y_ultrasonic_collision">
         <origin xyz="0.8223259775169315 -0.20085081100077495 -0.336876122547469" rpy="0.0 0.0 0.0" />
@@ -508,18 +460,14 @@
     <axis xyz="0 1 0"/>
 </joint> 
 
-<gazebo reference="negative_y_ultrasonic_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="imu_link">
   <visual>
     <geometry>
       <box size="0.020 0.027 0.004"/>
     </geometry>
+    <material name="Sensor">
+        <color rgba="0.5 0.5 1.0 1.0"/>
+    </material>
   </visual>
   <collision>
     <geometry>
@@ -614,6 +562,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/lidar.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Sensor">
+            <color rgba="0.5 0.5 1.0 1.0"/>
+        </material>
     </visual>
     <collision name="lidar_collision">
         <origin xyz="-0.13500000000000056 9.199892852992226e-17 -0.4673180916632634" rpy="0.0 0.0 0.0" />
@@ -663,7 +614,6 @@
       <frame_name>lidar_link</frame_name>
     </plugin>
   </sensor>
-  <self_collide>true</self_collide>
 </gazebo>
 
 <link name="camera_link" type="fixed">
@@ -677,6 +627,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/camera.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Sensor">
+            <color rgba="0.5 0.5 1.0 1.0"/>
+        </material>
     </visual>
     <collision name="camera_collision">
         <origin xyz="-0.13500000000000056 5.650065322205647e-17 -0.41480000000000034" rpy="0.0 0.0 0.0" />
@@ -736,7 +689,6 @@
       <hackBaseline>0</hackBaseline>
     </plugin>
   </sensor>
-  <self_collide>true</self_collide>
 </gazebo>
 
 <link name="e_stop_button_link">
@@ -750,6 +702,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/e-stop-button.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Safety">
+            <color rgba="1.0 1.0 0.0 1.0"/>
+        </material>
     </visual>
     <collision name="e-stop-button_collision">
         <origin xyz="1.2355259775176999 6.62649864820291e-16 -0.5031322262326828" rpy="0.0 0.0 0.0" />
@@ -766,13 +721,6 @@
     <axis xyz="0 1 0"/>
 </joint> 
 
-<gazebo reference="e_stop_button_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
-
 <link name="top_light_link">
     <inertial>
         <origin xyz="-0.6551259775177494 -9.669489146408102e-17 0.5186703165352109" rpy="0.0 0.0 0.0" />
@@ -784,6 +732,9 @@
         <geometry>
             <mesh filename="file://$(find snow_white_description)/src/description/top-light.stl" scale="0.001 0.001 0.001" />
         </geometry>
+        <material name="Safety">
+            <color rgba="1.0 1.0 0.0 1.0"/>
+        </material>
     </visual>
     <collision name="top-light_collision">
         <origin xyz="0.6551259775177494 9.669489146408102e-17 -0.5186703165352109" rpy="0.0 0.0 0.0" />
@@ -799,13 +750,6 @@
     <origin xyz="-0.6551259775177494 -9.669489146408102e-17 0.5186703165352109"/>
     <axis xyz="0 1 0"/>
 </joint> 
-
-<gazebo reference="top_light_link">
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-  <gravity>true</gravity>
-</gazebo>
 
 <gazebo>
   <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'>
