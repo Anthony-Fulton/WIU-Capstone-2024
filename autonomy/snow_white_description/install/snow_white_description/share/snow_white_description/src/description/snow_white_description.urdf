@@ -85,10 +85,10 @@
     </joint>
 </xacro:macro>
 
-<xacro:wheel prefix="drivewheel_front_left" x_reflect="1.0" y_reflect="1"/>
-<xacro:wheel prefix="drivewheel_front_right" x_reflect="1.0" y_reflect="-1"/>
 <xacro:wheel prefix="drivewheel_back_left" x_reflect="-1" y_reflect="1"/>
 <xacro:wheel prefix="drivewheel_back_right" x_reflect="-1" y_reflect="-1"/>
+<xacro:wheel prefix="drivewheel_front_left" x_reflect="1" y_reflect="1"/>
+<xacro:wheel prefix="drivewheel_front_right" x_reflect="1" y_reflect="-1"/>
 
 <!-- Adding in a really rough version of the Augur. This took a while.-->
 <link name="augur_link">
